@@ -7,7 +7,7 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-import { Header } from "@/components";
+import { Header, Footer } from "@/components";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,9 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`min-h-full ${poppins.className}`}>
-      <body className="min-h-full flex flex-col bg-[#F7F7F7]">
+      <body className="min-h-screen flex flex-col bg-[#F7F7F7]">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
