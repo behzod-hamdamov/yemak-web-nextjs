@@ -1,4 +1,4 @@
-import { Categories } from "@/components";
+import { Categories, Restaurants } from "@/components";
 
 export default function page() {
   return (
@@ -7,6 +7,7 @@ export default function page() {
         <h1 className="font-bold text-[32px] leading-10.5 text-[#12282F]">Restoranlar</h1>
         <div className="flex flex-col gap-8">
           <Categories />
+          <Restaurants />
         </div>
       </div>
     </main>
